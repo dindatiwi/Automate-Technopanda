@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-29T15:39:58 ICT" name="Default suite" finished-at="2022-12-29T15:40:05 ICT" duration-ms="6312">
+    <groups>
+    </groups>
+    <test started-at="2022-12-29T15:39:58 ICT" name="Default test" finished-at="2022-12-29T15:40:05 ICT" duration-ms="6312">
+      <class name="technopanda.automate.VerifySorting">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:technopanda.automate.VerifySorting@7e5c856f]" started-at="2022-12-29T15:39:58 ICT" name="beforeMethod" finished-at="2022-12-29T15:40:02 ICT" duration-ms="4131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verify_item_in_mobile_list_page_can_be_sorted_by_name()[pri:0, instance:technopanda.automate.VerifySorting@7e5c856f]" started-at="2022-12-29T15:40:02 ICT" name="verify_item_in_mobile_list_page_can_be_sorted_by_name" finished-at="2022-12-29T15:40:04 ICT" duration-ms="2023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_item_in_mobile_list_page_can_be_sorted_by_name -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:technopanda.automate.VerifySorting@7e5c856f]" started-at="2022-12-29T15:40:04 ICT" name="afterMethod" finished-at="2022-12-29T15:40:05 ICT" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- technopanda.automate.VerifySorting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
