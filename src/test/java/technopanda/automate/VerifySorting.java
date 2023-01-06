@@ -16,15 +16,32 @@ public class VerifySorting extends BaseWebTest{
 	
 	//String
 	String sortBy = "Name";
-	String expectedTitle = "MOBILE";
+	String expectedTitleMobile = "MOBILE";
+	String expectedTitleWelcome = "This is demo site for   ";
+	
+	  
+	  @Test
+	  public void verify_welcome_title() {
+		  	String actualTitle = welcomePage.getTitle();
+		  	//assert title on mobile page
+		  	Assert.assertTrue(actualTitle.contains(expectedTitleWelcome.toUpperCase()));
+	  }
+	  
+	  
+	  @Test
+	  public void verify_mobile_title() {
+		  	welcomePage.clickMobilePage();
+		  	String actualTitle = mobileListPage.getTitle();
+		  	
+		  	//assert title on mobile page
+		  	Assert.assertTrue(actualTitle.contains(expectedTitleMobile));
+		  	
+	  }
 	
   @Test
-  public void verify_item_in_mobile_list_page_can_be_sorted_by_name(){
+  public void verify_item_sorted_by_name(){
   	welcomePage.clickMobilePage();
-  	String actualTitle = mobileListPage.getTitle();
-  	//assert title on mobile page
-  	Assert.assertTrue(actualTitle.contains(expectedTitle));
-  	
+
   	//get data before filter
   	List<String> beforeFilterList = mobileListPage.getListData();
 	System.out.println(beforeFilterList);
@@ -41,4 +58,5 @@ public class VerifySorting extends BaseWebTest{
   	Assert.assertEquals(beforeFilterList, afterFilterList);
   	
   }
+
 }

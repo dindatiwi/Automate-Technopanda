@@ -8,6 +8,7 @@ public class WelcomePage extends BasePage{
 	
 	//Locator
 	By mobileBtn = By.xpath("(//a[normalize-space()='Mobile'])[1]");
+	By title = By.tagName("h2");
 
 	public WelcomePage(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explicitWait) {
 		super(driver, explicitWait);
@@ -16,6 +17,10 @@ public class WelcomePage extends BasePage{
 	//Function
 	public void clickMobilePage() {
 		clickAndWait(mobileBtn);
+	}
+	
+	public String getTitle() {
+		return getText(title);
 	}
 	
 }

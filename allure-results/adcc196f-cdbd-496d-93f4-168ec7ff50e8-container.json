@@ -1,0 +1,1 @@
+{"uuid":"adcc196f-cdbd-496d-93f4-168ec7ff50e8","name":"technopanda.automate.BaseWebTest.afterMethod","description":"","start":1672306419347,"stop":1672306419420,"children":["ec4c64fb-d79f-4edf-8e66-8ccf1c2d8300"],"afters":[{"name":"afterMethod","status":"passed","stage":"finished","description":"","start":1672306419347,"stop":1672306419420}]}

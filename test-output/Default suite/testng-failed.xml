@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="technopanda.automate.VerifySorting">
+      <class name="technopanda.automate.AppTest">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="verify_item_in_mobile_list_page_can_be_sorted_by_name"/>
+          <include name="setUp"/>
+          <include name="testDay1TestCase1"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- technopanda.automate.VerifySorting -->
+      </class> <!-- technopanda.automate.AppTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

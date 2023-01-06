@@ -1,0 +1,1 @@
+{"uuid":"22831f6b-50d6-4348-b6a8-9cf4945bd50d","name":"technopanda.automate.AppTest.setUp","description":"","start":1672306936723,"stop":1672306936724,"children":["8b1e1ee0-75c5-4f08-b933-924d34052cc1"],"befores":[{"name":"setUp","status":"broken","stage":"finished","description":"","start":1672306936723,"stop":1672306936723}]}
