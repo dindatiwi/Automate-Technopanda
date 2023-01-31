@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="technopanda.automate.AppTest">
+      <class name="technopanda.automate.VerifyPrice">
         <methods>
-          <include name="setUp"/>
-          <include name="testDay1TestCase1"/>
-          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="verify_price"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- technopanda.automate.AppTest -->
+      </class> <!-- technopanda.automate.VerifyPrice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

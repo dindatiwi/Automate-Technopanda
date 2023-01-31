@@ -17,30 +17,30 @@ public class VerifySorting extends BaseWebTest{
 	//String
 	String sortBy = "Name";
 	String expectedTitleMobile = "MOBILE";
-	String expectedTitleWelcome = "This is demo site for   ";
+	String expectedTitleWelcome = "THIS IS DEMO SITE FOR   ";
 	
-	  
-	  @Test
-	  public void verify_welcome_title() {
-		  	String actualTitle = welcomePage.getTitle();
-		  	//assert title on mobile page
-		  	Assert.assertTrue(actualTitle.contains(expectedTitleWelcome.toUpperCase()));
-	  }
-	  
-	  
-	  @Test
-	  public void verify_mobile_title() {
-		  	welcomePage.clickMobilePage();
-		  	String actualTitle = mobileListPage.getTitle();
-		  	
-		  	//assert title on mobile page
-		  	Assert.assertTrue(actualTitle.contains(expectedTitleMobile));
-		  	
-	  }
 	
   @Test
   public void verify_item_sorted_by_name(){
+	 String actualTitleWelcome = welcomePage.getTitle();
+	 try {
+		  	//assert title on mobile page
+			Assert.assertEquals(actualTitleWelcome, expectedTitleWelcome);
+	} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+	}
   	welcomePage.clickMobilePage();
+  	
+  	String actualTitleMobile = mobileListPage.getTitle();
+  	
+  	try {
+		//assert title on mobile page
+		Assert.assertTrue(actualTitleMobile.contains(expectedTitleMobile));
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 
   	//get data before filter
   	List<String> beforeFilterList = mobileListPage.getListData();

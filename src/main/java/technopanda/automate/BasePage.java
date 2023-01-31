@@ -1,7 +1,9 @@
 package technopanda.automate;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -43,6 +45,17 @@ public class BasePage {
 	  		FilterList.add(p.getText());
 	  	}
 	  	return FilterList;
+	}
+	
+	public Map<String, String> getDataWithMap(By locatorA,By locatorB){
+	  	List<WebElement> filterData = driver.get().findElements(locatorA);
+	  	List<WebElement> filterzData = driver.get().findElements(locatorB);
+	  	Map<String,String> testData = new HashMap<>();
+	  	for(int i = 0;i< filterData.size();i++) {
+	  		testData.put(filterData.get(i).getText(), filterzData.get(i).getText());
+	  	}
+		
+		return testData;
 	}
 
 }
