@@ -1,5 +1,6 @@
 # Automate-Technopanda
-Automation Practice with Selenium, JAVA, TestNG and MAVEN 
+Automation Practice with Selenium, JAVA, TestNG and MAVEN
+using POM structure
 purposely only for practice and learning
 
 Website used [Technopanda](http://live.techpanda.org/index.php/)
